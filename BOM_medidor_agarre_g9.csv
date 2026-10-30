@@ -1,0 +1,13 @@
+Referencia,Cantidad,Valor,Descripcion,Huella KiCad
+J1;J2,2,Zocalo hembra 1x8 2.54 mm,Montaje de la LILYGO T-OI Plus (ESP32-C3),Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical
+J3,1,Header macho 1x4 2.54 mm,Conector del cable al BMP180 (VIN GND SCL SDA),Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+R1;R2,2,100 ohm 1/4 W,Resistencias serie en SDA y SCL,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+R3,1,220 ohm 1/4 W,Limitadora del LED (~6 mA),Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+C1;C3;C4,3,100 nF ceramico,Desacople (C1) y filtro de pulsadores (C3 C4),Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm
+C2,1,10 uF electrolitico,Desacople de 3V3 (pin 1 = +),Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+D1,1,LED verde 5 mm,Indicador de umbral,G9:LED_D5.0mm_CNC (adaptada: pads 1.7 mm)
+SW1;SW2,2,Pulsador 6x6 mm,Pulsadores CERO e INICIO/STOP,Button_Switch_THT:SW_PUSH_6mm
+TP1-TP4,4,Punto de prueba (pad),3V3 GND SDA SCL - no se compra,TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm
+H1-H4,4,Agujero M3 3.2 mm (sin cobre),Fijacion mecanica - no se compra (tornillo M3 opcional),MountingHole:MountingHole_3.2mm_M3
+U1,1,LILYGO T-OI Plus,Modulo ESP32-C3 (se enchufa en J1 y J2),-
+S1,1,BMP180 (GY-68),Sensor dentro del recipiente flexible (cable a J3),-
